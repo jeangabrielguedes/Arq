@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 0;">
+  <div th:style="'display: flex; flex-direction: column; align-items: flex-start; background: lightblue; width:50%'">
+    <img src="https://avatars.githubusercontent.com/u/75743151?v=4"style="width:250px; height:300px" />
+    <div style="display: flex; flex-direction: column; margin-left: 16px;">
+      <h1 th:text="${nome}" />
+      <p>Numero: <span th:text="${numeroTelefone}"></p>
+      <p>Email: <span th:text="${email}"></p>
+       <p>Data de Nascimento: <span th:text="${dataNascimento}"></p>
+       <p>Linkedin: <span th:text="${linkedin}"></p>
+        <p>GitHub: <span th:text="${gitHub}"></p>
+    </div>
+  </div>
+</body>
+</html>
